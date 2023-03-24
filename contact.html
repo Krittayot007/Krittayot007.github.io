@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-image:url("https://cdn.pixabay.com/photo/2022/11/06/17/32/lake-thun-7574547_1280.jpg") ;
+            background-color: rgba(13, 67, 203, 0.651);
+            background-blend-mode: multiply;
+            height: 50px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: sandybrown;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            font-style: italic;
+        }
+        html {
+            font-family: 'Lato', sans-serif;
+        }
+        .box {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid ;
+            background-color: bisque;
+            margin: 50px;
+            width: 30%;
+            padding: -20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a> |
+            <a href="./education.html">Education</a> |
+            <a href="./work.html">Work Experience</a> |
+            <a href="#">Contact Me</a> |
+        </nav>
+    </header>
+    <hr>
+    <h2>Contact Me</h2>
+    <div class="box">
+        <p>Enter you info..</p> 
+        <form action="#">
+            <label for="yname">Your name :</label><br>
+            <input type="text" name="yname" value="">
+            <br>
+            <label for="email">Your E-mail :</label><br>
+            <input type="text" name="email" value=""><br>
+            <br>
+            <label for="gender">Gender :</label>
+            <br>
+            <select name="Gender">
+                <option value="" disabled selected hidden >select..</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">other</option>
+            </select>
+            <br><br>
+            <span>Messages</span><br>
+            <textarea name="message" style="width:200px; height:200px;"></textarea>
+            <br><br>
+            <input type="submit" name="send" value="send">
+            <input type="reset" name="clear" value="clear">
+          </form> 
+    </div>
+</body>
+</html>
